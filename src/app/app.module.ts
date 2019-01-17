@@ -8,7 +8,7 @@ import { TablaComponent } from './tabla/tabla.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SelectorComponent
+    SelectorComponent,
     AppComponent,
     TablaComponent
   ],
