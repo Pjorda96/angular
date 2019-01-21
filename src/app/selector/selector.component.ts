@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectorComponent implements OnInit {
 
+  color: string = '';
+  colores: string[] = ['black', 'grey', 'red', 'orange', 'brown', 'blue'];
+  colores2: string[] = ['white', 'darkgrey', 'pink', 'yellow', 'green', 'purple'];
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  selectorColor(event) {
+    this.color = event.backgroundColor;
+  }
 }
