@@ -1,9 +1,9 @@
 <div id="informacion">
-  <h3>Prueba de envio de informacion</h3>
-
-  <!-- Mostrar el dato enviado -->
-  Dimensiones: {{dimensiones}}
-
-  <div *ngFor="let column of columnas"></div>
-
+  <table>
+    <tr *ngFor="let fila of this.columnas()">
+      <td *ngFor="let fila of this.filas()" >
+        <p>f</p>
+      </td>
+    </tr>
+  </table>
 </div>

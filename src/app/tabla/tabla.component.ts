@@ -7,31 +7,31 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TablaComponent implements OnInit {
 
+  constructor() { }
+
+
   @Input() dimensiones: number[];
 
-  columna(){
-    let columna = [];
-    for(let i=0;i<this.dimensiones[0];i++){
-      columna.push("Prueba Columnas");
+  columnas()
+  {
+    let columnas=[];
+    for (let j = 0; j < this.dimensiones[0]; j++) {
+        columnas.push("columnas");
     }
-    return columna;
-  }
-  fila(){
-      let fila = [];
-      for(let i=0;i<this.dimensiones[1];i++){
-          fila.push("Prueba Filas");
-      }
-      return fila;
+    return columnas;
   }
 
-
-  ngOnInit() {
-    let columnas: string[] = this.columna();
-    let filas: string[] = this.fila();
+  filas() {
+    let filas = [];
+    for (let j = 0; j < this.dimensiones[1]; j++) {
+      filas.push("fila");
+    }
+    return filas;
   }
 
+  ngOnInit(){
 
-
+  }
 
 
 }
