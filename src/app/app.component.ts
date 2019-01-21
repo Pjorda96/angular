@@ -14,10 +14,8 @@ export class AppComponent implements OnInit {
   // Funcion que pide ancho y alto y lo devuelve
   Tamanyo() {
     //Pedir dimensiones
-    /*let ancho = parseInt(prompt("Introduzca los pixeles de ancho que desee"));
-    let alto = parseInt(prompt("Introduzca los pixeles de alto que desee"));*/
-    let ancho = 1;
-    let alto = 1;
+    let ancho = parseInt(prompt("Introduzca los pixeles de ancho que desee"));
+    let alto = parseInt(prompt("Introduzca los pixeles de alto que desee"));
 
     this.dimensiones = [ancho, alto];
   }
