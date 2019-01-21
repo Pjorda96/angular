@@ -2,6 +2,7 @@ table{
     float:left;
     border: 2px solid black;
     margin-right: 100px;
+    height: 240px;
 }
 
 td{
