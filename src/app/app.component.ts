@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {log} from 'util';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Pixart';
+  color: string = '';
 
   dimensiones = [333, 888];
 
@@ -22,5 +24,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.Tamanyo();
+  }
+
+  handleChildEvent(event) {
+    console.log(event);
   }
 }

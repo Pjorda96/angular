@@ -7,7 +7,7 @@
 <div id="programa">
   <!-- enviar los datos de componente a componente -->
   <app-tabla [dimensiones]="dimensiones"></app-tabla>
-  <selector></selector>
+  <selector (outputString)="handleChildEvent($event)"></selector>
 </div>
 
 
