@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'Pixart';
   color: string = '';
 
-  dimensiones = [333, 888];
+  dimensiones: number[];
 
 
   // Funcion que pide ancho y alto y lo devuelve
@@ -27,6 +27,6 @@ export class AppComponent implements OnInit {
   }
 
   handleChildEvent(event) {
-    console.log(event);
+    this.color = event;
   }
 }

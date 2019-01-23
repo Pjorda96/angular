@@ -1,8 +1,8 @@
 <div id="informacion">
   <table>
     <tr *ngFor="let fila of this.columnas()">
-      <td *ngFor="let fila of this.filas()" >
-        <p>f</p>
+      <td *ngFor="let fila of this.filas()" (click)="changeBackground($event)">
+        <p></p>
       </td>
     </tr>
   </table>

@@ -6,7 +6,7 @@
 </div>
 <div id="programa">
   <!-- enviar los datos de componente a componente -->
-  <app-tabla [dimensiones]="dimensiones"></app-tabla>
+  <app-tabla [dimensiones]="dimensiones" [color]="color"></app-tabla>
   <selector (outputString)="handleChildEvent($event)"></selector>
 </div>
 

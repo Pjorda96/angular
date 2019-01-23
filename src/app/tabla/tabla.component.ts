@@ -11,9 +11,9 @@ export class TablaComponent implements OnInit {
 
 
   @Input() dimensiones: number[];
+  @Input() color: string;
 
-  columnas()
-  {
+  columnas() {
     let columnas=[];
     for (let j = 0; j < this.dimensiones[0]; j++) {
         columnas.push("columnas");
@@ -29,9 +29,11 @@ export class TablaComponent implements OnInit {
     return filas;
   }
 
-  ngOnInit(){
-
+  changeBackground(event) {
+    event.target.style.backgroundColor = this.color;
   }
+
+  ngOnInit() { }
 
 
 }
