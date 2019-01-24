@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'botones',
@@ -7,11 +7,20 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class BotonesComponent implements OnInit {
 
+  @Input() color: string;
+  @Output() reset = new EventEmitter();
+
   constructor() { }
 
-  @Input() color: string;
-
   ngOnInit() {
+  }
+
+  recargar() {
+    location.reload();
+  }
+
+  resetear() {
+    this.reset.emit(true);
   }
 
 }

@@ -8,7 +8,8 @@ import {log} from 'util';
 })
 export class AppComponent implements OnInit {
   title = 'Pixart';
-  color: string = '';
+  color = '';
+  reset = false;
 
   dimensiones: number[];
 
@@ -28,5 +29,9 @@ export class AppComponent implements OnInit {
 
   handleChildEvent(event) {
     this.color = event;
+  }
+
+  resetear(event) {
+    this.reset = event;
   }
 }

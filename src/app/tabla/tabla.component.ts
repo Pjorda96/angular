@@ -12,6 +12,7 @@ export class TablaComponent implements OnInit {
 
   @Input() dimensiones: number[];
   @Input() color: string;
+  @Input() reset: boolean;
 
   columnas() {
     let columnas=[];
