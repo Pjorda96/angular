@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SelectorComponent } from './selector/selector.component';
 import { TablaComponent } from './tabla/tabla.component';
+import { BotonesComponent } from './botones/botones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SelectorComponent,
     AppComponent,
-    TablaComponent
+    TablaComponent,
+    BotonesComponent
   ],
   imports: [
     BrowserModule

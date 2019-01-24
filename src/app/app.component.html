@@ -8,6 +8,7 @@
   <!-- enviar los datos de componente a componente -->
   <app-tabla [dimensiones]="dimensiones" [color]="color"></app-tabla>
   <selector (outputString)="handleChildEvent($event)"></selector>
+  <botones [color]="color"></botones>
 </div>
 
 
